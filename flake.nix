@@ -5,7 +5,7 @@
 
   outputs = { self, nixpkgs, neovim-nightly }:
     let
-      overlays = [ neovim-nightly.overlay ];
+      somevar = "";
     in {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
